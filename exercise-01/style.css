@@ -59,10 +59,7 @@
 }
 
 
-
-
 /* Text */
-
 .title {
   font-size: 39px;
 }
@@ -93,11 +90,9 @@
 .container {
   display: flex;
   color:   rgb(127, 127, 127);
-  margin-top: 230px;
-  flex-direction: row;
-  justify-content: space-between;
+  margin-top: 219px;
   column-gap: 10px;
-  font-size: 13px;
+  font-size: 12px;
 }
 
 .item1{
@@ -111,7 +106,7 @@
 .container div {
   background-color: #80ffc4;
   border-radius: 10px;
-  padding: 3px 7px;
+  padding: 9px 7px;
 }
 
 
