@@ -1,0 +1,125 @@
+/** 
+ * A very basic CSS reset:
+ * More about CSS resets: https://meyerweb.com/eric/tools/css/reset/
+ */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/** 
+ * Card sizing and positioning.
+ * Don't mess with this!
+ */
+.card {
+  width: 300px;
+  height: 540px;
+  margin: 40px auto 0 auto;
+}
+
+/** 
+ * Just some styling to make the card visible.
+ * Feel free to change this!
+ */
+
+.card {
+  font-family: 'Zilla Slab', serif;
+  background-color: rgb(127, 127, 127);
+  color: #80ffc4;
+  border-radius: 0px;
+  padding: 9px;
+}
+
+/* Images */
+
+.img-area {
+  position: relative;
+}
+
+
+.img-area .main-image {
+  position: absolute;
+  width: 100%;
+  margin: 25px auto 0;
+  border-radius: 10px;
+}
+
+.img-area .second-image {
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  margin: 10px auto 0;
+  border-radius: 10px
+}
+
+.img-area .second-image:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+
+
+
+/* Text */
+
+.title {
+  font-size: 39px;
+}
+
+.card-subtitle {
+  font-size: 20px;
+}
+
+.info-box {
+  position: relative;
+  top: 40%;
+  height: 177px;
+  background-color: #80ffc4;
+  border-radius: 10px;
+  padding: 0px;
+}
+
+.description {
+  padding: 30px 10px;
+  text-decoration:overline;
+  color : rgb(127, 127, 127);
+  font-size: 20px;
+}
+
+
+/* footer info buttons */
+
+.container {
+  display: flex;
+  color:   rgb(127, 127, 127);
+  margin-top: 230px;
+  flex-direction: row;
+  justify-content: space-between;
+  column-gap: 10px;
+  font-size: 13px;
+}
+
+.item1{
+  flex-grow: 1;
+}
+
+.item2 {
+  flex-grow: 3;
+}
+
+.container div {
+  background-color: #80ffc4;
+  border-radius: 10px;
+  padding: 3px 7px;
+}
+
+
+
+
+
+
+
+
+
+
