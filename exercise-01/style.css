@@ -24,15 +24,19 @@
  */
 
 .card {
-  font-family: 'Zilla Slab', serif;
-  background-color: rgb(127, 127, 127);
-  color: #80ffc4;
+  font-family: 'Rowdies', cursive;
+  background-color: rgb(0,5,255);
+  background: linear-gradient(90deg, rgb(193, 251, 164) 0%, rgb(130, 201, 255) 46%, rgb(73, 234, 255) 100%);
+  color: #ffffff;
   border-radius: 0px;
   padding: 9px;
+  border-radius: 10px;
+  /* border: 2px solid black;  */
+  box-shadow: 0px 1px 10px 1px blue;
 }
 
-/* Images */
 
+/* Images */
 .img-area {
   position: relative;
 }
@@ -41,8 +45,10 @@
 .img-area .main-image {
   position: absolute;
   width: 100%;
-  margin: 25px auto 0;
+  margin: 10px auto 0;
   border-radius: 10px;
+  box-shadow: 0px 1px 10px 1px blue;
+
 }
 
 .img-area .second-image {
@@ -50,12 +56,14 @@
   position: absolute;
   width: 100%;
   margin: 10px auto 0;
-  border-radius: 10px
+  border-radius: 10px;
+  transition: opacity 0.4s;
 }
 
 .img-area .second-image:hover {
   opacity: 1;
   cursor: pointer;
+  transition: opacity 0.4s;
 }
 
 
@@ -65,56 +73,177 @@
 }
 
 .card-subtitle {
-  font-size: 20px;
+  font-size: 19px;
 }
 
 .info-box {
   position: relative;
   top: 40%;
-  height: 177px;
-  background-color: #80ffc4;
+  height: 148px;
+  background-color: rgb(193, 251, 164);
   border-radius: 10px;
   padding: 0px;
+  box-shadow: 0px 1px 10px 1px blue;
 }
 
 .description {
-  padding: 30px 10px;
-  text-decoration:overline;
-  color : rgb(127, 127, 127);
-  font-size: 20px;
-}
+  padding: 10px 10px;
+  color : rgb(58, 134, 255);
+  font-size: 23px;
+  line-height: 1.6rem;
 
+}
 
 /* footer info buttons */
 
 .container {
   display: flex;
-  color:   rgb(127, 127, 127);
-  margin-top: 219px;
+  color: rgb(58, 134, 255);
+  margin-top: 218px;
   column-gap: 10px;
   font-size: 12px;
 }
 
 .item1{
   flex-grow: 1;
+  box-shadow: 0px 1px 10px 1px blue;
 }
 
 .item2 {
   flex-grow: 3;
+  box-shadow: 0px 1px 10px 1px blue;
 }
 
 .container div {
-  background-color: #80ffc4;
+  background-color: rgb(193, 251, 164);
   border-radius: 10px;
   padding: 9px 7px;
 }
 
 
+/* SLIDER --------------------------*/
+
+/* brings slider to middle of container */
 
 
+.slideContainer {
+  width: 75%;
+  margin-top: 0px;
+}
+
+/*  
+.slider::after {
+  content: '100';
+  color: white;
+  font-size: 1rem;
+  position: relative;
+  left: 80%;
+  top: 26%;
+}
+*/
+.number {
+  text-align: left;
+}
+
+#slider {
+  /* takes out standard look of slider */
+  -webkit-appearance: none;
+  appearance: none;
+  width: 85%;
+  height: 10px;
+  /* going in 90degree direction left or right */
+  background: linear-gradient(90deg, #3F2B96 0%, #A8C0FF 100%);
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+  border-radius: 10px;
+  box-shadow: 0px 1px 10px 1px blue;
+}
+
+#slider:hover {
+  opacity: 1;
+}
+
+/* style of slide button */
+
+/* (use -webkit- (Chrome, Opera, Safari, Edge) */
+#slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 15px;
+  background: white;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+/* this is for firefox */
+#slider::-moz-range-thumb {
+  width: 20px;
+  height: 15px;
+  background: white;
+  cursor: pointer;
+  border-radius: 10px;
+}
 
 
+/* colorbuttons ------------------ */
+.colorswitch {
+  width: 150px;
+  margin-top: 5px;
+  /* border: 2px solid rgb(255, 255, 255); */
+}
+
+.color {
+  display: table-cell;
+  width: 28px;
+  height: 28px;
+  margin: 0 1px;
+  cursor: pointer;
+  box-shadow: 0px 1px 10px 1px blue;
+  border-radius: 10px;
+}
+
+.c1 {
+  background: linear-gradient(90deg, #efd5ff 0%, #515ada 100%);
+}
+
+.c2 {
+  background: linear-gradient(90deg, #f8ff00 0%, #3ad59f 100%);
+}
+
+.c3 {
+  background: linear-gradient(90deg, #d53369 0%, #daae51 100%);
+}
+
+.c4 {
+  background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+}
+
+.options {
+  margin-top: 3px;
+  display: flex;
+  position: relative;
+}
+
+#secret {
+  opacity: 0;
+}
 
 
+.spin1 {
+  transition-duration: 2s;
+  transition-property: transform;
+  width: 40px;
+  height: 29px;
+  background: rgb(20,50,90);
+  margin-top: 4px;
+  border-radius: 10px;
+}
+
+.spin1:hover {
+  transform: rotate(360deg);
+}
 
 

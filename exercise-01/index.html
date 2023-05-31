@@ -9,20 +9,23 @@
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300&display=swap" rel="stylesheet">
+  <script defer src="script.js"></script>  
 </head>
 
 <body>
   <!-- Keep this div with the class card! -->
   <div class="card">
     <!-- Write your markup in here! Feel free to delete the title and the text! -->
-    <h1 class="title">This is a Grigri.</h1>
+    <h1 class="title"> This is a Grigri.</h1>
     <p class="card-subtitle">Find out more below.</p>
+
+  
     
-    <div class="img-area"> 
-      <img class="main-image" src="grigri1.jpg" alt="symbol" />
-      <img class="second-image" src="grigri2.jpg" alt="symbol" />
-    
+    <div id = "test" class="img-area"> 
+      <img class="main-image" src="grigri1.jpg" alt="symbol" id="sizechange1"/>
+      <img class="second-image" src="grigri2.jpg" alt="symbol" id="sizechange2"/>
+      <!-- <p id="secret">Tara smells like Flowers</p> -->
     </div>
       
     <div class="info-box"> 
@@ -32,12 +35,31 @@
     <div class="container"> 
       <div class="item1"> Construction: semi-automatic </div>
       <div class="item2"> Range of use: sport climbing, indoor climbing </div>
-    
     </div>
+
+    <div class="options">
+      <div class="slidecontainer">
+        <input type="range" min="0" max="100" value="100" id="slider" >
+        <p class="number">Size: <span id="slider-value">100</span>%</p>
+      </div>
     
+      <div class="colorswitch">
+        <span onclick="color(this)" class="color c1"></span>
+        <span onclick="color(this)" class="color c2"></span>
+        <span onclick="color(this)" class="color c3"></span>
+        <span onclick="color(this)" class="color c4"></span>
+      </div>
+
+      <div class="spin1">
+        <span class="spin1" id="button">climb</span>
+      </div>
+
+    </div>
+
+   
+
   </div>
 
   
 </body>
 
-</html>

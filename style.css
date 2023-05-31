@@ -3,10 +3,32 @@
     font-size: 50px;
 }
 
+
 .balken {
     position: relative;
     width: 90vw; 
     height: 5vh; 
     background-color: rgb(201, 120, 255);
+}
+
+.pagestyle {
+    font-family: 'Abril Fatface', cursive;
+    background-color: rgb(203, 255, 144);
+}
+
+.text {
+    color: rgb(255, 0, 0);
+    line-height: 3em;
+    word-spacing: 8em;
+    font-size: 13px;
+    letter-spacing: 2em;
+}
+
+@media only screen and (min-width: 800px) {
+    .text {
+        word-spacing: 2em;
+        color: blueviolet;
+        font-size: 20px;
+    }
 }
 
